@@ -1,11 +1,14 @@
+package za.co.absa;
+
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.Assert;
 
-public class Main {
+public class TestClass {
+
     @Test
-    public static void main(String[] args) {
+    public void Chrome() {
         System.setProperty("webdriver.chrome.driver", "/Users/mzwandile/bolt/selenium/browserDrivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com");
